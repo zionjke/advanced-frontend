@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "outDir": "./build/",
+    "noImplicitAny": true, // говорит о том что мы должны явно указать тип переменной
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true, // обрабатывает не только тс файлы, но и джс
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true, // позволяет работать с пакетами, которые используют commonjs как с обычными пакетами с помощью import (вместо require, module.exports)
+  },
+  "ts-node": {
+    // these options are overrides used only by ts-node
+    // same as the --compilerOptions flag and the TS_NODE_COMPILER_OPTIONS environment variable
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
+}
