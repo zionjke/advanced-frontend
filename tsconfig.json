@@ -4,7 +4,7 @@
     "noImplicitAny": true, // говорит о том что мы должны явно указать тип переменной
     "module": "es6",
     "target": "es5",
-    "jsx": "react",
+    "jsx": "react-jsx",
     "allowJs": true, // обрабатывает не только тс файлы, но и джс
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
