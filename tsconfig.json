@@ -2,7 +2,7 @@
   "compilerOptions": {
     "outDir": "./build/",
     "noImplicitAny": true, // говорит о том что мы должны явно указать тип переменной
-    "module": "es6",
+    "module": "esnext",
     "target": "es5",
     "jsx": "react-jsx",
     "allowJs": true, // обрабатывает не только тс файлы, но и джс
@@ -17,4 +17,6 @@
       "module": "commonjs"
     }
   },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
