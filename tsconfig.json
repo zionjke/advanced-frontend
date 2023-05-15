@@ -8,7 +8,10 @@
     "allowJs": true, // обрабатывает не только тс файлы, но и джс
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true, // позволяет работать с пакетами, которые используют commonjs как с обычными пакетами с помощью import (вместо require, module.exports)
+    "paths": {
+      "*": ["./src/*"] // абсолютный путь из папки src (вместо ../../../)
+    },
+    "esModuleInterop": true // позволяет работать с пакетами, которые используют commonjs как с обычными пакетами с помощью import (вместо require, module.exports)
   },
   "ts-node": {
     // these options are overrides used only by ts-node
