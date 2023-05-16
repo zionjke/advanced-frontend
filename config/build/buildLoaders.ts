@@ -15,7 +15,7 @@ export const buildLoaders = ({isDev}: BuildOptions): webpack.RuleSetRule[] => {
                     modules: {
                         auto: (resPath: string) => resPath.includes('.module.'), // задаем условие, что если это не цсс модуль то он будет обрабатыватся как обычный цсс в сборке.
                         localIdentName: isDev // название файлов в сборке.
-                            ? '[path][name]__local--[hash:base64:5]'
+                            ? '[path][name]__[local]--[hash:base64:5]'
                             : '[hash:base64:8]'
                     },
                 }
