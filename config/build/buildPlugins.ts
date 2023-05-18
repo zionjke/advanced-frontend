@@ -15,6 +15,7 @@ export const buildPlugins = ({paths, isDev}: BuildOptions): webpack.WebpackPlugi
         new webpack.ProgressPlugin(), // прогресс при сборке проекта
         new webpack.DefinePlugin({    // для создания глобальных переменных
             __IS_DEV__: JSON.stringify(isDev)
-        })
+        }),
+        new webpack.HotModuleReplacementPlugin()
     ]
 }
