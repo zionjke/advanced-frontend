@@ -1,7 +1,7 @@
-import {lazy} from "react";
+import { lazy } from 'react';
 
-export const MainPageLazy = lazy(() => new Promise(resolve => {
+export const MainPageLazy = lazy(() => new Promise((resolve) => {
     // @ts-ignore
     // ПОТОМ УДАЛИТЬ!!
-    setTimeout(() => resolve(import(/* webpackChunkName: "main_page"*/ './MainPage')), 1500)
-}))
+    setTimeout(() => resolve(import(/* webpackChunkName: "main_page" */ './MainPage')), 1500);
+}));
