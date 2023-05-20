@@ -12,16 +12,19 @@ describe('classNames', () => {
 
     test('with mods', () => {
         const result = 'someClass cls1 cls2 firstMod secondMod';
-        expect(classNames('someClass', { firstMod: true, secondMod: true }, ['cls1', 'cls2'])).toBe(result);
+        expect(classNames('someClass', { firstMod: true, secondMod: true }, ['cls1', 'cls2']))
+            .toBe(result);
     });
 
     test('with mods false', () => {
         const result = 'someClass cls1 cls2 firstMod';
-        expect(classNames('someClass', { firstMod: true, secondMod: false }, ['cls1', 'cls2'])).toBe(result);
+        expect(classNames('someClass', { firstMod: true, secondMod: false }, ['cls1', 'cls2']))
+            .toBe(result);
     });
 
     test('with mods undefined', () => {
         const result = 'someClass cls1 cls2 firstMod';
-        expect(classNames('someClass', { firstMod: true, secondMod: undefined }, ['cls1', 'cls2'])).toBe(result);
+        expect(classNames('someClass', { firstMod: true, secondMod: undefined }, ['cls1', 'cls2']))
+            .toBe(result);
     });
 });

@@ -36,7 +36,7 @@ module.exports = {
         'no-shadow': 'off',
         'import/prefer-default-export': 'off',
         'import/extensions': 'off',
-        'max-len': 'off',
+        'max-len': ['warn', { ignoreComments: true, code: 100 }],
         'react/react-in-jsx-scope': 'off',
         'no-undef': 'off',
         'no-underscore-dangle': 'off',
