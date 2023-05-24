@@ -40,6 +40,12 @@
   },
   "include": [
     "./config/jest/setupTests.ts",
-    "./src/**/*"
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+  ],
+  "references": [
+    {
+      "path": "src", "prepend": true
+    }
   ]
 }

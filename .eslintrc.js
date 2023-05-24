@@ -4,13 +4,8 @@ module.exports = {
         es2021: true,
         jest: true,
     },
-    extends: [
-        'plugin:react/recommended',
-        'airbnb',
-        'plugin:i18next/recommended',
-    ],
+    extends: ['plugin:react/recommended', 'airbnb', 'plugin:i18next/recommended', 'plugin:storybook/recommended'],
     parser: '@typescript-eslint/parser',
-    overrides: [],
     parserOptions: {
         ecmaFeatures: {
             jsx: true,
@@ -18,16 +13,15 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    plugins: [
-        'react',
-        '@typescript-eslint',
-        'i18next',
-    ],
+    plugins: ['react', '@typescript-eslint', 'i18next'],
     rules: {
-        'react/jsx-indent': [2, 4], // error, number of space
+        'react/jsx-indent': [2, 4],
+        // error, number of space
         'react/jsx-indent-props': [2, 4],
         indent: [2, 4],
-        'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', 'ts', 'tsx'] }],
+        'react/jsx-filename-extension': [1, {
+            extensions: ['.js', '.jsx', 'ts', 'tsx'],
+        }],
         'import/no-unresolved': 'off',
         'no-unused-vars': 'warn',
         'react/function-component-definition': 'off',
@@ -36,16 +30,26 @@ module.exports = {
         'no-shadow': 'off',
         'import/prefer-default-export': 'off',
         'import/extensions': 'off',
-        'max-len': ['warn', { ignoreComments: true, code: 100 }],
+        'max-len': ['warn', {
+            ignoreComments: true,
+            code: 100,
+        }],
         'react/react-in-jsx-scope': 'off',
         'no-undef': 'off',
         'no-underscore-dangle': 'off',
         'import/no-extraneous-dependencies': 'off',
         'no-lone-blocks': 'off',
-        'i18next/no-literal-string': ['warn', { markupOnly: true }],
-
+        'i18next/no-literal-string': ['warn', {
+            markupOnly: true,
+        }],
     },
     globals: {
         __IS_DEV__: true,
     },
+    overrides: [{
+        files: ['**/src/**/*.test.{ts,tsx}'],
+        rules: {
+            'i18next/no-literal-string': 'off', // говорим что в тестах отключаем это правило
+        },
+    }],
 };
