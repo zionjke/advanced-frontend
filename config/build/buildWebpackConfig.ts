@@ -1,4 +1,4 @@
-import * as webpack from 'webpack';
+import webpack = require('webpack');
 import { BuildOptions } from './types/config';
 import { buildLoaders } from './buildLoaders';
 import { buildResolvers } from './buildResolvers';

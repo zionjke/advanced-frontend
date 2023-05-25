@@ -1,6 +1,6 @@
-import * as HTMLWebpackPlugin from 'html-webpack-plugin';
-import * as webpack from 'webpack';
-import * as MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import HTMLWebpackPlugin = require('html-webpack-plugin') ;
+import webpack = require('webpack');
+import MiniCssExtractPlugin = require('mini-css-extract-plugin');
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { BuildOptions } from './types/config';
 

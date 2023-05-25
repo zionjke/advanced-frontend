@@ -1,4 +1,4 @@
-import * as MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 export function buildCssLoaders(isDev: boolean) {
     return {
