@@ -1,5 +1,5 @@
-import * as webpack from 'webpack';
-import * as path from 'path';
+import webpack = require('webpack');
+import path = require('path');
 import { BuildPaths } from '../build/types/config';
 import { buildCssLoaders } from '../build/loaders/buildCssLoaders';
 

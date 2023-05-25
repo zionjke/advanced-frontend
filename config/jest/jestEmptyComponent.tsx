@@ -1,5 +1,4 @@
-// @ts-ignore
-import React from 'react';
+import React = require('react');
 
 const jestEmptyComponent = function () {
     return <div />;
