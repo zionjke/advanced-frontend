@@ -17,6 +17,5 @@ export const Button:FC<ButtonProps> = ({
 }: ButtonProps) => (
     <button type="button" className={classNames(cls.Button, {}, [className, cls[theme]])} {...rest}>
         {children}
-        aaaa
     </button>
 );
