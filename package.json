@@ -14,7 +14,8 @@
     "test:unit": "jest --config ./config/jest/jest.config.ts",
     "test:ui": "npx chromatic --project-token=chpt_6d5eab1451c71e8\n",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
-    "build-storybook": "storybook build -c ./config/storybook"
+    "build-storybook": "storybook build -c ./config/storybook",
+    "chromatic": "npx chromatic --project-token=chpt_6d5eab1451c71e8"
   },
   "keywords": [],
   "author": "",
@@ -84,5 +85,7 @@
     "react-dom": "^17.0.2",
     "react-i18next": "^11.15.5",
     "react-router-dom": "^6.2.1"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "advanced-frontend@1.0.0"
 }
