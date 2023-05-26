@@ -14,8 +14,7 @@
     "test:unit": "jest --config ./config/jest/jest.config.ts",
     "test:ui": "npx chromatic --project-token=chpt_6d5eab1451c71e8\n",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
-    "build-storybook": "storybook build -c ./config/storybook",
-    "chromatic": "npx chromatic --project-token=chpt_6d5eab1451c71e8"
+    "build-storybook": "storybook build -c ./config/storybook"
   },
   "keywords": [],
   "author": "",
@@ -66,6 +65,7 @@
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0",
     "storybook": "^7.0.17",
+    "storybook-addon-pseudo-states": "^2.0.1",
     "style-loader": "^3.3.1",
     "stylelint": "^14.5.3",
     "stylelint-config-standard-scss": "^3.0.0",
