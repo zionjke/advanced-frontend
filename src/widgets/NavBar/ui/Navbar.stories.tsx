@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { ThemeProvider } from 'app/providers/ThemeProvider';
+import { Theme, ThemeProvider } from 'app/providers/ThemeProvider';
 import { NavBar } from './NavBar';
 
 const meta = {
@@ -15,15 +15,6 @@ export const Light: Story = {
     args: {
 
     },
-    decorators: [
-        (Story) => (
-            <ThemeProvider>
-                <div className="app">
-                    <Story />
-                </div>
-            </ThemeProvider>
-        ),
-    ],
 };
 
 export const Dark: Story = {
@@ -33,7 +24,7 @@ export const Dark: Story = {
     decorators: [
         (Story) => (
             <ThemeProvider>
-                <div className="app dark">
+                <div className={`app ${Theme.DARK}`}>
                     <Story />
                 </div>
             </ThemeProvider>

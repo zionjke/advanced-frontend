@@ -1,7 +1,7 @@
 import type { Preview } from '@storybook/react';
 import '../../src/app/styles/index.scss';
 import { BrowserRouter } from 'react-router-dom';
-import { ThemeProvider } from '../../src/app/providers/ThemeProvider';
+import { Theme, ThemeProvider } from '../../src/app/providers/ThemeProvider';
 
 const preview: Preview = {
     parameters: {
@@ -21,7 +21,7 @@ const preview: Preview = {
         ),
         (Story) => (
             <ThemeProvider>
-                <div className="app light">
+                <div className={`app ${Theme.LIGHT}`}>
                     <Story />
                 </div>
             </ThemeProvider>
