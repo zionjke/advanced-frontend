@@ -1,5 +1,5 @@
 import React, {
-    ChangeEvent, ChangeEventHandler, InputHTMLAttributes, memo, useEffect, useRef, useState,
+    ChangeEvent, InputHTMLAttributes, memo, useEffect, useRef,
 } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './Input.module.scss';
@@ -37,7 +37,7 @@ export const Input = memo(({
         if (autoFocus) {
             inputRef.current?.focus();
         }
-    }, []);
+    }, [autoFocus]);
 
     return (
         <div className={classNames(cls.InputWrapper, {}, [className])}>
