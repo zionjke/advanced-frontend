@@ -24,7 +24,7 @@ export const NavBar = ({ className }: NavBarProps) => {
 
     return (
         <div className={classNames(cls.NavBar, {}, [className])}>
-            <Button onClick={onShowModal} theme={ButtonTheme.OUTLINE} className={cls.links}>
+            <Button onClick={onShowModal} theme={ButtonTheme.OUTLINE_INVERTED} className={cls.links}>
                 {t('Войти')}
             </Button>
             <LoginModal isOpen={isOpenAuthModal} onClose={onCloseModal} />
